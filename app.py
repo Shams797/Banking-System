@@ -14,7 +14,7 @@ menu = st.sidebar.selectbox("Menu",[
     "Delete"
 ])
 
-# -------- CREATE -------- #
+# CREATE
 if menu == "Create Account":
     name = st.text_input("Name")
     age = st.text_input("Age")
@@ -35,7 +35,7 @@ if menu == "Create Account":
             st.success("Account created")
             st.write(result)
 
-# -------- DEPOSIT -------- #
+# DEPOSITE
 elif menu == "Deposit":
     acc = st.text_input("Account Number")
     pin = st.number_input("PIN", step=1)
@@ -51,7 +51,7 @@ elif menu == "Deposit":
         else:
             st.success("Deposited successfully")
 
-# -------- WITHDRAW -------- #
+# WITHDRAW
 elif menu == "Withdraw":
     acc = st.text_input("Account Number")
     pin = st.number_input("PIN", step=1)
@@ -69,7 +69,7 @@ elif menu == "Withdraw":
         else:
             st.success("Withdraw successful")
 
-# -------- SHOW -------- #
+# SHOW
 elif menu == "Show Details":
     acc = st.text_input("Account Number")
     pin = st.number_input("PIN", step=1)
@@ -82,7 +82,7 @@ elif menu == "Show Details":
         else:
             st.json(result)
 
-# -------- UPDATE -------- #
+# UPDATE
 elif menu == "Update":
     acc = st.text_input("Account Number")
     pin = st.number_input("PIN", step=1)
@@ -103,7 +103,7 @@ elif menu == "Update":
         else:
             st.success("Updated successfully")
 
-# -------- DELETE -------- #
+# DELETE
 elif menu == "Delete":
     acc = st.text_input("Account Number")
     pin = st.number_input("PIN", step=1)
